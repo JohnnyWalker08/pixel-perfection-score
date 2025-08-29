@@ -8,98 +8,126 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Ultra-Premium Color Palette */
+    --background: 0 0% 99%;
+    --foreground: 220 91% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 91% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 91% 12%;
 
-    /* Church Brand Colors */
-    --primary: 221 83% 53%; /* Deep spiritual blue */
+    /* Luxury Brand Colors - Deep Navy & Rose Gold */
+    --primary: 220 91% 12%; /* Ultra-deep navy */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 221 83% 65%;
+    --primary-light: 220 65% 25%;
+    --primary-lighter: 220 45% 35%;
 
-    --secondary: 45 93% 47%; /* Warm gold */
+    --secondary: 14 84% 65%; /* Rose gold */
     --secondary-foreground: 0 0% 100%;
+    --secondary-light: 14 84% 75%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 45 93% 47%; /* Warm gold accent */
+    --accent: 265 89% 65%; /* Luxury purple */
     --accent-foreground: 0 0% 100%;
+    
+    --luxury-gold: 38 92% 75%; /* Premium gold */
+    --luxury-silver: 220 15% 85%; /* Sophisticated silver */
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 25% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221 83% 53%;
+    --border: 220 15% 92%;
+    --input: 220 15% 94%;
+    --ring: 220 91% 12%;
 
-    /* Church-specific design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(221 83% 65%) 100%);
-    --warm-gradient: linear-gradient(135deg, hsl(45 93% 47%) 0%, hsl(35 91% 52%) 100%);
-    --gentle-shadow: 0 10px 30px -10px hsl(221 83% 53% / 0.2);
-    --warm-shadow: 0 10px 30px -10px hsl(45 93% 47% / 0.2);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Ultra-Premium Gradient System */
+    --hero-gradient: linear-gradient(135deg, 
+      hsl(220 91% 12%) 0%, 
+      hsl(220 65% 25%) 35%, 
+      hsl(265 89% 45%) 100%);
+    
+    --rose-gold-gradient: linear-gradient(135deg, 
+      hsl(14 84% 65%) 0%, 
+      hsl(38 92% 75%) 50%, 
+      hsl(14 84% 75%) 100%);
+    
+    --luxury-gradient: linear-gradient(135deg, 
+      hsl(265 89% 65%) 0%, 
+      hsl(220 91% 35%) 100%);
+    
+    --glass-gradient: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.1) 0%, 
+      rgba(255, 255, 255, 0.05) 100%);
 
-    --radius: 0.5rem;
+    --mesh-gradient: radial-gradient(ellipse at top left, 
+      hsl(220 91% 12% / 0.15) 0%, 
+      transparent 50%), 
+      radial-gradient(ellipse at top right, 
+      hsl(265 89% 65% / 0.15) 0%, 
+      transparent 50%), 
+      radial-gradient(ellipse at bottom left, 
+      hsl(14 84% 65% / 0.15) 0%, 
+      transparent 50%);
 
-    --sidebar-background: 0 0% 98%;
+    /* Premium Shadow System */
+    --shadow-luxury: 0 25px 50px -12px hsl(220 91% 12% / 0.25);
+    --shadow-premium: 0 20px 40px -8px hsl(220 91% 12% / 0.15);
+    --shadow-elegant: 0 10px 25px -5px hsl(220 91% 12% / 0.1);
+    --shadow-glow: 0 0 40px hsl(265 89% 65% / 0.3);
+    --shadow-gold: 0 10px 30px -10px hsl(14 84% 65% / 0.4);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Advanced Animation Curves */
+    --ease-luxury: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-premium: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Glass Morphism */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-backdrop: blur(20px) saturate(180%);
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Premium Spacing */
+    --spacing-luxury: 8rem;
+    --spacing-premium: 6rem;
+    --spacing-elegant: 4rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Ultra-Premium Dark Mode */
+    --background: 220 91% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 91% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 220 91% 12%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 14 84% 65%;
+    --secondary-foreground: 220 91% 12%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --muted: 220 50% 15%;
+    --muted-foreground: 220 25% 65%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --border: 220 50% 20%;
+    --input: 220 50% 18%;
+    --ring: 265 89% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark Mode Premium Gradients */
+    --hero-gradient: linear-gradient(135deg, 
+      hsl(220 91% 8%) 0%, 
+      hsl(265 89% 25%) 50%, 
+      hsl(220 91% 15%) 100%);
+    
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    
+    --shadow-luxury: 0 25px 50px -12px hsl(220 91% 4% / 0.6);
+    --shadow-glow: 0 0 60px hsl(265 89% 65% / 0.4);
   }
 }
 
@@ -109,6 +137,101 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-image: var(--mesh-gradient);
+    background-attachment: fixed;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Premium Selection Styles */
+  ::selection {
+    background: hsl(var(--secondary) / 0.2);
+    color: hsl(var(--secondary-foreground));
+  }
+
+  /* Ultra-Premium Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--rose-gold-gradient);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--luxury-gradient);
+  }
+}
+
+@layer components {
+  /* Glass Morphism Component */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    border: 1px solid var(--glass-border);
+  }
+
+  /* Premium Button Variants */
+  .btn-luxury {
+    @apply relative overflow-hidden;
+    background: var(--hero-gradient);
+    box-shadow: var(--shadow-luxury);
+    transition: all 0.6s var(--ease-luxury);
+  }
+
+  .btn-luxury::before {
+    @apply absolute inset-0 opacity-0;
+    content: '';
+    background: var(--rose-gold-gradient);
+    transition: opacity 0.6s var(--ease-luxury);
+  }
+
+  .btn-luxury:hover::before {
+    @apply opacity-100;
+  }
+
+  .btn-luxury > * {
+    @apply relative z-10;
+  }
+
+  /* Floating Animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Magnetic Hover Effect */
+  .magnetic {
+    transition: transform 0.3s var(--ease-premium);
+  }
+
+  .magnetic:hover {
+    transform: scale(1.05) translateY(-2px);
+  }
+
+  /* Premium Text Gradient */
+  .text-gradient {
+    background: var(--rose-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Luxury Glow Effect */
+  .glow {
+    filter: drop-shadow(0 0 20px hsl(var(--secondary) / 0.4));
   }
 }
