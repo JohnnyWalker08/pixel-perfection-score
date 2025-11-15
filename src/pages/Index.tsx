@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Services from '@/components/Services';
-import Ministries from '@/components/Ministries';
+import Events from '@/components/Events';
 import Contact from '@/components/Contact';
 import { Button } from '@/components/ui/button';
 import { Sparkles, MapPin, Phone, Mail } from 'lucide-react';
@@ -15,7 +15,7 @@ const Index = () => {
         <Hero />
         <About />
         <Services />
-        <Ministries />
+        <Events />
         <Contact />
       </main>
       
@@ -35,13 +35,13 @@ const Index = () => {
                   <Sparkles className="h-6 w-6 text-white animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-2xl">Grace Community</h3>
-                  <p className="text-sm text-white/80 -mt-1">Church of Excellence</p>
+                  <h3 className="font-display font-bold text-2xl">BCM</h3>
+                  <p className="text-sm text-white/80 -mt-1">Chapel of Redemption</p>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed font-light">
-                A sanctuary of faith where excellence meets spirituality, 
-                creating transformational experiences for every soul.
+                Christ Beulah Christian Ministry - A Bible-believing church where the Holy Spirit moves, 
+                souls are saved, and lives transformed for God's glory.
               </p>
             </div>
             
@@ -86,27 +86,26 @@ const Index = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 mt-1 text-secondary" />
                   <div>
-                    <p>123 Faith Street</p>
-                    <p>Hope City, HC 12345</p>
+                    <p>Adedeji Estate Phase 1</p>
+                    <p>Off Ado Road, Akure, Ondo State</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-secondary" />
-                  <p>(555) 123-HOPE</p>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-secondary" />
-                  <p>info@gracecc.org</p>
+                <div className="flex items-start space-x-3">
+                  <Phone className="h-5 w-5 mt-1 text-secondary" />
+                  <div>
+                    <p>08034693725</p>
+                    <p>08032314796 • 08061696838</p>
+                  </div>
                 </div>
               </div>
               
               {/* Premium Action Buttons */}
               <div className="flex flex-col space-y-3 mt-8">
-                <Button className="glass border border-white/20 hover:bg-white/10 text-white rounded-premium transition-all duration-500">
-                  Give Online
-                </Button>
                 <Button className="bg-secondary hover:bg-secondary/90 text-white rounded-premium shadow-gold hover:shadow-glow transition-all duration-700">
-                  Visit Us
+                  <a href="tel:+2348061696838">Request Prayer</a>
+                </Button>
+                <Button className="glass border border-white/20 hover:bg-white/10 text-white rounded-premium transition-all duration-500">
+                  <a href="https://wa.me/2348061696838" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
                 </Button>
               </div>
             </div>
@@ -116,11 +115,11 @@ const Index = () => {
           <div className="border-t border-white/20 pt-12 text-center">
             <div className="glass rounded-full px-8 py-4 inline-block border border-white/10 mb-6">
               <p className="text-white/80 font-light">
-                © 2024 Grace Community Church. All rights reserved.
+                © 2024 Christ Beulah Christian Ministry. All rights reserved.
               </p>
             </div>
             <p className="text-secondary font-medium">
-              Crafted with excellence for our sacred community
+              Winning souls for Christ's Kingdom
             </p>
           </div>
         </div>

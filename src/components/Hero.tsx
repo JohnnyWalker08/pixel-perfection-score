@@ -28,21 +28,20 @@ const Hero = () => {
           {/* Luxury Badge */}
           <div className="inline-flex items-center space-x-2 glass rounded-full px-6 py-3 mb-8 animate-luxury-fade-in">
             <Sparkles className="h-5 w-5 text-secondary animate-pulse" />
-            <span className="text-sm font-medium text-white/90">Where Faith Meets Excellence</span>
+            <span className="text-sm font-medium text-white/90">Winning Souls for Christ's Kingdom</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="font-display text-display-2xl md:text-[8rem] font-bold mb-8 leading-[0.9] animate-luxury-fade-in" style={{ animationDelay: '0.2s' }}>
-            Welcome
+            Christ Beulah
             <span className="block text-gradient animate-shimmer bg-gradient-to-r from-secondary via-luxury-gold to-secondary bg-[length:200%_100%]">
-              Home
+              Christian Ministry
             </span>
           </h1>
 
           {/* Sophisticated Subtitle */}
           <p className="text-xl md:text-3xl mb-12 text-white/85 font-light leading-relaxed max-w-4xl mx-auto animate-premium-slide-up" style={{ animationDelay: '0.4s' }}>
-            Experience the divine in an atmosphere of 
-            <span className="font-semibold text-secondary"> unparalleled beauty</span>, where every soul finds sanctuary and every heart discovers its purpose.
+            <span className="font-semibold text-secondary italic">Chapel of Redemption</span> - Where the Holy Spirit moves powerfully, transforming lives and preparing vessels for the great revival. Every soul matters to God.
           </p>
           
           {/* Ultra-Premium CTA Buttons */}
@@ -71,24 +70,41 @@ const Hero = () => {
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto animate-luxury-fade-in" style={{ animationDelay: '0.8s' }}>
             <div className="glass rounded-luxury p-8 hover:bg-white/15 transition-all duration-700 magnetic group border border-white/20">
               <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-rose-gold-gradient rounded-full flex items-center justify-center shadow-gold group-hover:shadow-glow transition-all duration-700">
+                <div className="w-16 h-16 bg-rose-gold-gradient rounded-luxury flex items-center justify-center shadow-gold group-hover:shadow-glow transition-all duration-700">
                   <Calendar className="h-8 w-8 text-white" />
                 </div>
               </div>
-              <h3 className="font-display text-2xl font-bold mb-3">Sunday Worship</h3>
-              <p className="text-white/90 text-lg mb-2">Every Sunday at 10:00 AM</p>
-              <p className="text-white/70">An extraordinary spiritual experience awaits</p>
+              <h3 className="text-2xl font-display font-bold text-white mb-4">Sunday Worship</h3>
+              <div className="text-white/80 mb-4 text-lg space-y-2 font-light">
+                <p>Sunday School: <span className="font-semibold text-secondary">8:00 AM - 9:00 AM</span></p>
+                <p>Main Service: <span className="font-semibold text-secondary">9:00 AM - 11:30 AM</span></p>
+              </div>
+              <p className="text-white/75 mb-6 leading-relaxed">
+                Experience powerful worship, anointed teaching, and the manifestation of the Holy Spirit every Sunday.
+              </p>
+              <Button className="w-full glass border border-white/30 hover:bg-white/20 text-white rounded-premium font-semibold">
+                Learn More
+              </Button>
             </div>
             
             <div className="glass rounded-luxury p-8 hover:bg-white/15 transition-all duration-700 magnetic group border border-white/20">
               <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-luxury-gradient rounded-full flex items-center justify-center shadow-glow group-hover:shadow-gold transition-all duration-700">
+                <div className="w-16 h-16 bg-luxury-gradient rounded-luxury flex items-center justify-center shadow-gold group-hover:shadow-glow transition-all duration-700">
                   <MapPin className="h-8 w-8 text-white" />
                 </div>
               </div>
-              <h3 className="font-display text-2xl font-bold mb-3">Visit Our Sanctuary</h3>
-              <p className="text-white/90 text-lg mb-2">123 Faith Street, Hope City</p>
-              <p className="text-white/70">A space designed for transformation</p>
+              <h3 className="text-2xl font-display font-bold text-white mb-4">Visit Us</h3>
+              <p className="text-white/80 mb-4 text-lg leading-relaxed font-light">
+                <strong>Main Assembly:</strong><br />
+                Adedeji Estate Phase 1<br />
+                Off Ado Road, Akure, Ondo State
+              </p>
+              <p className="text-white/75 mb-6 leading-relaxed">
+                Come and experience the power of God in our Spirit-filled gatherings. All are welcome!
+              </p>
+              <Button className="w-full glass border border-white/30 hover:bg-white/20 text-white rounded-premium font-semibold">
+                Get Directions
+              </Button>
             </div>
           </div>
         </div>
