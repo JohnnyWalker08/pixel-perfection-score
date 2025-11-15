@@ -5,51 +5,51 @@ import { Clock, Music, Baby, Coffee, Calendar, Users, Sparkles, Crown, Heart } f
 const Services = () => {
   const services = [
     {
-      time: "9:00 AM - 9:45 AM",
-      title: "Sacred Study",
-      description: "Immersive biblical exploration designed to deepen understanding and spiritual insight",
+      time: "8:00 AM - 9:00 AM",
+      title: "Sunday School",
+      description: "Interactive Bible study with freedom to ask questions, deepening your understanding of God's Word",
       icon: Clock,
-      features: ["Expert-Led Discussions", "Interactive Learning", "Community Reflection"],
+      features: ["Open Discussion", "Biblical Teaching", "Question & Answer"],
       gradient: "bg-hero-gradient"
     },
     {
-      time: "10:00 AM - 11:30 AM",
-      title: "Divine Worship",
-      description: "An extraordinary spiritual experience featuring inspiring music and transformational teaching",
+      time: "9:00 AM - 9:45 AM",
+      title: "Worship & Praise",
+      description: "Powerful worship, anointed praise, and hymns that usher in the presence of the Holy Spirit",
       icon: Music,
-      features: ["Contemporary Excellence", "Biblical Teaching", "Sacred Community"],
+      features: ["Spirit-Led Worship", "Hymns & Songs", "Divine Atmosphere"],
       gradient: "bg-rose-gold-gradient"
     },
     {
-      time: "11:30 AM - 12:00 PM",
-      title: "Fellowship Sanctuary",
-      description: "Connect with our curated community over artisanal refreshments and meaningful conversation",
-      icon: Coffee,
-      features: ["Premium Hospitality", "Welcome Center", "Community Connection"],
+      time: "9:45 AM - 11:30 AM",
+      title: "Main Service",
+      description: "Anointed preaching of God's Word with manifestation of the Holy Spirit, signs and wonders",
+      icon: Sparkles,
+      features: ["Biblical Preaching", "Holy Spirit Manifestation", "Altar Ministry"],
       gradient: "bg-luxury-gradient"
     }
   ];
 
-  const specialMinistries = [
+  const weeklyPrograms = [
     {
-      title: "Children's Academy",
-      description: "Premium faith-building programs in a safe, inspiring environment for young minds",
+      title: "Bible Study",
+      description: "Deep diving into Scripture with practical application for victorious Christian living",
       icon: Baby,
-      age: "Birth - 12 years",
+      day: "Every Tuesday",
       gradient: "bg-hero-gradient"
     },
     {
-      title: "Youth Excellence",
-      description: "Empowering tomorrow's leaders through engaging programs and mentorship",
+      title: "Holy Ghost Service",
+      description: "Powerful encounters with God through prayer, worship, and the manifestation of spiritual gifts",
       icon: Users,
-      age: "13 - 18 years", 
+      day: "Every Thursday", 
       gradient: "bg-luxury-gradient"
     },
     {
-      title: "Special Celebrations",
-      description: "Exceptional holiday services, baptisms, and milestone celebrations",
+      title: "Night of Encounter",
+      description: "A night set apart for divine breakthroughs, miracles, and intimate communion with God",
       icon: Calendar,
-      age: "All welcome",
+      day: "3rd Wednesday Monthly",
       gradient: "bg-rose-gold-gradient"
     }
   ];
@@ -57,23 +57,23 @@ const Services = () => {
   const expectations = [
     {
       number: 1,
-      title: "Exceptional Welcome",
-      description: "Our hospitality team provides a warm, luxurious welcome experience"
+      title: "Warm Welcome",
+      description: "Experience genuine love and hospitality as you enter our sanctuary"
     },
     {
       number: 2,
-      title: "Premium Comfort",
-      description: "Elegant seating and carefully designed spaces for optimal worship experience"
+      title: "Powerful Worship",
+      description: "Encounter God's presence through Spirit-led worship and praise"
     },
     {
       number: 3,
-      title: "Inspiring Excellence", 
-      description: "World-class music and profound biblical teaching that transforms lives"
+      title: "Anointed Teaching", 
+      description: "Receive life-transforming biblical teaching that builds your faith"
     },
     {
       number: 4,
-      title: "Meaningful Connection",
-      description: "Join our fellowship time and discover lasting relationships"
+      title: "Holy Spirit Presence",
+      description: "Experience the manifestation of God's power through signs and wonders"
     }
   ];
 
@@ -94,16 +94,16 @@ const Services = () => {
           </div>
 
           <h2 className="font-display text-display-xl md:text-display-2xl font-bold mb-8 leading-tight">
-            Join Our
+            Join Us for
             <span className="block text-gradient bg-rose-gold-gradient bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%]">
-              Sacred Gathering
+              Sunday Worship
             </span>
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
-            Every Sunday, we create an atmosphere of 
-            <span className="font-semibold text-secondary"> unparalleled spiritual excellence</span>, 
-            where worship transcends the ordinary and hearts are transformed.
+            Every Sunday at <span className="font-semibold text-secondary">8:00 AM</span>, 
+            we gather to experience God's transforming power through worship, teaching, and the 
+            <span className="font-semibold text-secondary"> manifestation of the Holy Spirit</span>.
           </p>
         </div>
 
@@ -165,7 +165,7 @@ const Services = () => {
           <div className="text-center mb-16 relative z-10">
             <div className="inline-flex items-center space-x-2 glass rounded-full px-6 py-3 mb-8 border border-accent/20">
               <Sparkles className="h-5 w-5 text-accent animate-pulse" />
-              <span className="text-sm font-medium text-primary">First Visit</span>
+              <span className="text-sm font-medium text-primary">First Time?</span>
             </div>
             
             <h3 className="font-display text-display-lg font-bold mb-6">
@@ -173,7 +173,7 @@ const Services = () => {
             </h3>
             
             <p className="text-xl text-muted-foreground font-light">
-              Your extraordinary spiritual journey begins here
+              This is not just a gathering—it's an encounter with the living God
             </p>
           </div>
           
@@ -198,21 +198,21 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Special Ministries */}
+        {/* Weekly Programs */}
         <div className="mb-luxury">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 glass rounded-full px-6 py-3 mb-8 border border-luxury-gold/30">
               <Heart className="h-5 w-5 text-luxury-gold animate-pulse" />
-              <span className="text-sm font-medium text-primary">Ministry Excellence</span>
+              <span className="text-sm font-medium text-primary">Weekly Programs</span>
             </div>
             
             <h3 className="font-display text-display-lg font-bold mb-6">
-              Specialized <span className="text-gradient">Programs</span>
+              Midweek <span className="text-gradient">Gatherings</span>
             </h3>
           </div>
           
           <div className="grid lg:grid-cols-3 gap-10 mb-16">
-            {specialMinistries.map((ministry, index) => (
+            {weeklyPrograms.map((ministry, index) => (
               <Card 
                 key={index} 
                 className="group hover:shadow-luxury transition-all duration-700 animate-premium-slide-up border-0 glass rounded-luxury magnetic overflow-hidden" 
@@ -229,7 +229,7 @@ const Services = () => {
                     {ministry.title}
                   </h4>
                   
-                  <p className="text-secondary font-semibold text-lg mb-6">{ministry.age}</p>
+                  <p className="text-secondary font-semibold text-lg mb-6">{ministry.day}</p>
                   
                   <p className="text-muted-foreground leading-relaxed mb-8">
                     {ministry.description}
@@ -248,7 +248,9 @@ const Services = () => {
               size="lg" 
               className="btn-luxury text-white px-16 py-6 text-xl rounded-premium magnetic shadow-luxury hover:shadow-gold transition-all duration-700"
             >
-              Plan Your First Visit
+              <a href="tel:+2348061696838" className="flex items-center">
+                Request Prayer
+              </a>
             </Button>
           </div>
         </div>

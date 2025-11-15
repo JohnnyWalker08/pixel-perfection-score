@@ -29,16 +29,16 @@ const Header = () => {
             <div className="hidden lg:flex items-center space-x-8">
               <div className="flex items-center space-x-2 hover:text-secondary transition-colors">
                 <MapPin className="h-4 w-4" />
-                <span>123 Faith Street, Hope City</span>
+                <span>Adedeji Estate, Akure</span>
               </div>
               <div className="flex items-center space-x-2 hover:text-secondary transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>(555) 123-HOPE</span>
+                <span>08034693725</span>
               </div>
             </div>
             <div className="flex items-center space-x-2 text-secondary font-medium">
               <Clock className="h-4 w-4" />
-              <span>Sunday Service: 10:00 AM</span>
+              <span>Sunday Service: 8:00 AM</span>
             </div>
           </div>
         </div>
@@ -56,18 +56,18 @@ const Header = () => {
               <div className="absolute -inset-1 bg-rose-gold-gradient rounded-luxury opacity-20 blur animate-luxury-glow"></div>
             </div>
             <div>
-              <h1 className="font-display font-bold text-2xl text-white group-hover:text-secondary transition-colors duration-500">
-                Grace Community
+              <h1 className="font-display font-bold text-xl md:text-2xl text-white group-hover:text-secondary transition-colors duration-500">
+                BCM
               </h1>
-              <p className="text-sm text-white/70 -mt-1 group-hover:text-secondary/80 transition-colors duration-500">
-                Church of Excellence
+              <p className="text-xs text-white/70 -mt-1 group-hover:text-secondary/80 transition-colors duration-500">
+                Chapel of Redemption
               </p>
             </div>
           </div>
 
           {/* Ultra-Premium Desktop Navigation */}
           <nav className="hidden lg:flex space-x-8">
-            {['Home', 'About', 'Services', 'Ministries', 'Events', 'Contact'].map((item, index) => (
+            {['Home', 'About', 'Services', 'Events', 'Contact'].map((item, index) => (
               <a 
                 key={item}
                 href={`#${item.toLowerCase()}`} 

@@ -9,30 +9,23 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Our Sanctuary",
-      details: ["123 Faith Street", "Hope City, HC 12345"],
+      details: ["Adedeji Estate Phase 1", "Off Ado Road, Akure, Ondo State"],
       action: "Get Directions",
       gradient: "bg-hero-gradient"
     },
     {
       icon: Phone,
-      title: "Connect With Us",
-      details: ["(555) 123-HOPE", "Monday - Friday: 9 AM - 5 PM"],
+      title: "Call Us",
+      details: ["08034693725", "08032314796 • 08061696838"],
       action: "Call Now",
       gradient: "bg-rose-gold-gradient"
     },
     {
-      icon: Mail,
-      title: "Send a Message",
-      details: ["info@gracecc.org", "pastor@gracecc.org"],
-      action: "Email Us",
-      gradient: "bg-luxury-gradient"
-    },
-    {
       icon: Clock,
-      title: "Office Hours",
-      details: ["Monday - Thursday: 9 AM - 5 PM", "Friday: 9 AM - 2 PM"],
+      title: "Service Times",
+      details: ["Sunday: 8:00 AM", "Tuesday: Bible Study", "Thursday: Holy Ghost Service"],
       action: "Plan Visit",
-      gradient: "bg-hero-gradient"
+      gradient: "bg-luxury-gradient"
     }
   ];
 
